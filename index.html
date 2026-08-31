@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HK Dive — Timezone Clocks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Digital Clocks — Multiple Time Zones</h1>
+
+    <section class="controls">
+      <label for="tz-select">Add timezone:</label>
+      <select id="tz-select">
+        <option value="">— Select a timezone —</option>
+      </select>
+      <button id="add-btn">Add</button>
+      <button id="add-local">Add Local</button>
+    </section>
+
+    <section id="clocks" class="clocks" aria-live="polite"></section>
+
+    <footer>
+      <small>Times update every second. Built for hk-dive-visibility.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
